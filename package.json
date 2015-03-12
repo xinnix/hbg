@@ -1,0 +1,22 @@
+{
+  "name": "hbg",
+  "version": "0.0.1",
+  "description": "绘本馆业务管理系统 www.cloudbean.com",
+  "keyword": [
+    "cloud bean",
+    "picture book",
+    "云豆绘本馆"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloud-bean/hbg.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hygkui/hbg/issues"
+  },
+  "dependencies": {
+    "express": "^4.12.2",
+    "mongoose": "^3.8.24"
+  }
+}
