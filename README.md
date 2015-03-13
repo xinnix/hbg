@@ -15,19 +15,19 @@ Grunt构建，npm管理后端依赖的软件包，bower管理前端依赖软件�
 #### 数据模型
 ```
 {
-  location: string, // 位置
-  qr_code: string, // 入库编码
-  in_time: datetime, // 入库时间
-  status: boolean, // 是否借出
-  skuid: string,
-  url: string,
-  name: string,  // 图书书名
-  jqimg: string, // 图书封面图片
-  price: float,
-  buy_price: float,
-  author: string,  // 图书作者
-  publication: string, // 出版社
-  pub-time: datetime   // 出版时间
+  location: String,   // 位置
+  qr_code: String,    // 入库编码
+  in_time: Date,      // 入库时间
+  isRent: Boolean,    // 是否借出
+  skuid: String,      // 书商品编号(jd.com)
+  url: String,        // 书网页地址（jd.com）
+  name: String,       // 图书书名
+  isbn: String,       // 图书isbn
+  jqimg: String,      // 图书封面图片
+  price: Number,      // wMaprice
+  author: String,     // 图书作者
+  pub: String,        // 出版社
+  pub-time: Date      // 出版时间
 }
 ```
 #### API
@@ -38,20 +38,20 @@ Grunt构建，npm管理后端依赖的软件包，bower管理前端依赖软件�
 #### 数据模型
 ```
 {
-  phone_number: string
-  baby_name: string
-  baby_birthday: datetime
-  baby_gender: number
-  card_number: string
-  active_time: datetime
-  valid_days: number
-  level: number		//会员类型
-  parent_name: string
-  address: string
-  email: string
-  weixin: string
-  other: string
-  head_photo: string
+  phone_Number: String
+  baby_name: String
+  baby_birthday: Date
+  isBoy: Boolean
+  card_Number: String
+  active_time: Date
+  valid_days: Number
+  level: Number		// 会员类型0,1,2分别代表 临时，普通年卡，高级年卡
+  parent_name: String
+  address: String
+  email: String
+  weixin: String
+  other: String
+  head_photo: String
 }
 ```
 #### API
@@ -64,8 +64,8 @@ Grunt构建，npm管理后端依赖的软件包，bower管理前端依赖软件�
 {
   inventory: ref
   member: ref
-  start_time: datetime,
-  end_time: datetime
+  start_time: Date,
+  end_time: Date
 }
 ```
 #### API
@@ -76,7 +76,7 @@ Grunt构建，npm管理后端依赖的软件包，bower管理前端依赖软件�
 #### 数据模型
 ```
 {
-  name: string
+  name: String
 }
 ```
 #### API
