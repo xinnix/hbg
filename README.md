@@ -4,7 +4,7 @@
 本项目采用MEAN.js架构，由nodejs技术驱动。
 
 ## 项目开发环境
-Grunt构建，npm管理依赖的软件包
+Grunt构建，npm管理后端依赖的软件包，bower管理前端依赖软件包
 
 ## 部署
 拟部署到heroku上面
@@ -45,7 +45,7 @@ Grunt构建，npm管理依赖的软件包
   card_number: string
   active_time: datetime
   valid_days: number
-  level: number
+  level: number		//会员类型
   parent_name: string
   address: string
   email: string
